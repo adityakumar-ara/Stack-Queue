@@ -67,3 +67,49 @@
     
 // }
 
+// ----------------------------------------------------------------------------------------------------------
+// This code add and dispaly elements
+
+#include<stdio.h>
+#define size 100
+int arr[size];
+int top = -1;
+void push(int item){
+    if (top == size-1)
+    {
+        printf("overflow");
+    }
+    else{
+        arr[++top] = item ;
+        printf("%d item inserted",item);
+    }
+    
+}
+void display(){
+    if (top == -1)
+    {
+        printf("Stack is Empty\n");
+    }
+    else{
+        printf("Stack elements are:\n");
+        for (int i = 0; i <= top; i++)
+        {
+            printf("%d\n", arr[i]);
+        }
+    }
+}
+
+int main(){
+    int item,n;
+    printf("Enter number how many element push in stack but under 100");
+    scanf("%d",&n);
+    for (int i = 0; i < n; i++)
+    {
+        printf("enter elements %d",i++);
+        scanf("%d",&item);
+        push(item);
+        display();
+    }
+    
+
+}
