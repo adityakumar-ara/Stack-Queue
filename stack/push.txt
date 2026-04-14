@@ -1,0 +1,12 @@
+ALGORITHM : - 
+First of all, we would make globale variable and decide size of stack. And (top = -1)
+
+STEP 1 :- Beging / start create function
+
+STEP 2 :- If top == size of stack -1, Then print "overflow"
+
+STEP 3 :- Else increse stack size and assign item (like stack[++top]=item) , after  printf("%d item inserted . \n", item);
+
+STEP 4 :-Unde int main function create same variable_name ,which passed in function 
+
+STEP 5 :- Call function
