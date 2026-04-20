@@ -3,36 +3,36 @@
 // // ------------------------------------------------------------------------------------------------------------
 
 
-// // #include <stdio.h>
-// // #define MAX_SIZE 10  // we can change variable name and size
-// // int stack[MAX_SIZE];
-// // int top = -1;
-// // void push(int item)
-// // {
-// //     if (top == MAX_SIZE - 1)
-// //     {
-// //         printf("Overflow & Exit");
-// //     }
-// //     else
-// //     {
-// //         stack[++top] = item;
-// //         printf("%d item inserted . \n", item);
-// //     }
-// // }
-// // int main()
-// // {
-// //     int item, n;
-// //     printf("Enter howmany element you want to add:");
-// //     scanf("%d", &n);
-// //     for (int i = 0; i < n; i++)
-// //     {
-// //         printf("Enter element:");
-// //         scanf("%d", &item);
-// //         push(item);
-// //     }
+#include <stdio.h>
+#define MAX_SIZE 10  // we can change variable name and size
+int stack[MAX_SIZE];
+int top = -1;
+void push(int item)
+{
+    if (top == MAX_SIZE - 1)
+    {
+        printf("Overflow & Exit");
+    }
+    else
+    {
+        stack[++top] = item;
+        printf("%d item inserted . \n", item);
+    }
+}
+int main()
+{
+    int item, n;
+    printf("Enter howmany element you want to add:");
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++)
+    {
+        printf("Enter element:");
+        scanf("%d", &item);
+        push(item);
+    }
 
-// //     return 0;
-// // }
+    return 0;
+}
 
 
 // // -----------------------------------------------------------------------------------------------------------
