@@ -1,0 +1,9 @@
+ALGORITHM :-
+
+STEP 1 :- Beging / create function
+
+STEP 2 :- if top == size of stack -1 ,Then print "overflow"
+
+STEP 3 :- create a variable and assign value aftes decrese stack size (like item = stack[top--]),printf("%d item inserted . \n", item);
+
+STEP 4 :- Exit
